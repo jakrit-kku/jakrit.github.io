@@ -1,0 +1,25 @@
+h2 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+}
+
+th {
+    background-color: lightyellow;
+}
+
+tr:nth-child(even) {
+    background-color: lightblue;
+}
