@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Click Button</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            click = 0;
+
+            function updateclicks() {
+                click++;
+                var para = document.getElementById("result");
+                para.textContent = 'You clicked the button for ' + click;
+                if (click == 1) {
+                    para.textContent += " time!"
+                } else {
+                    para.textContent += " times!"
+                }
+            }
+
+            var buttons = document.querySelectorAll('button');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].addEventListener('click', updateclicks, );
+            }
+        });
+    </script>
+    <style>
+        div {
+            padding-left: 3%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button class="btn-primary">Click me</button>
+    </div>
+    <div>
+        <p id="result"></p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Generate Random Words</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        div {
+            padding-left: 3%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            font-size: large;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        Enter student name: <input type="text" class="textname">
+    </div>
+    <div>
+        English <input type="radio" name="language" value="english" id="radioeng"> Thai <input type="radio" name="language" value="thai" id="radioth">
+    </div>
+    <br>
+    <div>
+        <button class="btn-primary">Generate random words</button>
+    </div>
+    <hr>
+    <div>
+        <p id="display"></p>
+    </div>
+
+    <script>
+        var button = document.querySelector('button');
+        var textname = document.querySelector('.textname');
+        var radioeng = document.getElementById('radioeng')
+        var radioth = document.getElementById('radioth')
+        var display = document.getElementById('display');
+
+        let engadj = ['beautiful', 'cute', 'pretty', 'lovely']
+        let thadj = ["สวย", "น่ารัก", "ใจดี", "มีเสน่ห์"]
+
+        function randomarray(array) {
+            const random = Math.floor(Math.random() * array.length);
+            return array[random];
+        }
+
+        button.onclick = function() {
+            if (radioeng.checked == true) {
+                display.textContent = textname.value + ' is ' + randomarray(engadj);
+                display.style.backgroundColor = 'lightblue';
+            } else if (radioth.checked == true) {
+                display.textContent = textname.value + 'เป็นคน' + randomarray(thadj);
+                display.style.backgroundColor = 'lightyellow';
+            }
+        }
+    </script>
+</body>
+
+</html>
