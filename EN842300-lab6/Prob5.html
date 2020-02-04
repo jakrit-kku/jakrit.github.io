@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Problem 5</title>
+
+    <body>
+
+        <form onsubmit="return checkForm()">
+            Name (max 10 characters): <input type="text" id="fname" size="20" name="fname"><br> Age (from 1 to 100): <input type="text" id="age" size="20" name="age"><br> E-mail: <input type="text" id="email" size="20" name="mail"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <script>
+            function checkForm() {
+                var name = document.getElementById("fname").value;
+                var age = document.getElementById("age").value;
+                var email = document.getElementById("email").value.indexOf("@");
+
+                if (name.length > 10) {
+                    alert("The name must be at most 10 characters");
+                }
+
+                if (isNaN(age) || age < 1 || age > 100) {
+                    alert("The age must be a number between 1 and 100");
+                }
+
+                if (email == -1) {
+                    alert("Not a valid e-mail because it does not have @");
+                }
+            }
+        </script>
+
+    </body>
+
+</html>
