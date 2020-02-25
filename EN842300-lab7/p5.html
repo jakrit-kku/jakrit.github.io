@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>My Book List</title>
+</head>
+
+<body>
+    <h1>My Book List</h1>
+    <div id="books_list">Click to generate my book list</div>
+    <script>
+        var books = [{
+            title: 'Sapiens: A Brief History of Humankind',
+            url: 'https://www.goodreads.com/book/show/23692271-sapiens',
+            author: 'Yuval Noah Harari'
+        }, {
+            title: 'The Glass Castle',
+            url: 'https://www.goodreads.com/book/show/7445.The_Glass_Castle',
+            author: 'Jeannette Walls'
+        }]
+
+        var bookList = document.getElementById('books_list');
+        bookList.addEventListener('click', createBooklist);
+
+        function createBooklist() {
+            var div = document.createElement('div');
+            // console.log(div)
+            var myOl = document.createElement('ol');
+            var myP = document.createElement('p');
+            var myA = document.createElement('a');
+            for (var i = 0; i < books.length; i++) {
+                // myA.textContent = books[i].title;
+                // myA.target = "_blank"
+                // myA.href = books[i].url;
+                // myP.innerHTML = myA.textContent + " by " + books[i].author;
+                // myLi.appendChild(myP);
+                // myOl.appendChild(myLi);
+                // document.body.appendChild(div);
+
+                // Second Method
+
+                var myLi = document.createElement('li');
+                myLi.innerHTML = `<p><a href = ${books[i].url} target='_blank'>${books[i].title}</a> by ${books[i].author}</p>`
+                myOl.appendChild(myLi);
+            }
+            div.appendChild(myOl);
+            document.body.appendChild(div);
+            // Note to self: Don't forget to append the last one to the document itself.
+
+        }
+    </script>
+</body>
+
+</html>
