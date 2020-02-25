@@ -22,6 +22,7 @@
 
         var bookList = document.getElementById('books_list');
         bookList.addEventListener('click', createBooklist);
+        var count = 0;
 
         function createBooklist() {
             var div = document.createElement('div');
@@ -29,27 +30,33 @@
             var myOl = document.createElement('ol');
             var myP = document.createElement('p');
             var myA = document.createElement('a');
-            for (var i = 0; i < books.length; i++) {
-                // myA.textContent = books[i].title;
-                // myA.target = "_blank"
-                // myA.href = books[i].url;
-                // myP.innerHTML = myA.textContent + " by " + books[i].author;
-                // myLi.appendChild(myP);
-                // myOl.appendChild(myLi);
-                // document.body.appendChild(div);
 
-                // Second Method
+            if (count < books.length - 1) {
+                for (var i = 0; i < books.length; i++) {
+                    // myA.textContent = books[i].title;
+                    // myA.target = "_blank"
+                    // myA.href = books[i].url;
+                    // myP.innerHTML = myA.textContent + " by " + books[i].author;
+                    // myLi.appendChild(myP);
+                    // myOl.appendChild(myLi);
+                    // document.body.appendChild(div);
 
-                var myLi = document.createElement('li');
-                myLi.innerHTML = `<p><a href = ${books[i].url} target='_blank'>${books[i].title}</a> by ${books[i].author}</p>`
+                    // Second Method
 
-                // access the ` by holding alt and press 9 and 6
+                    var myLi = document.createElement('li');
+                    myLi.innerHTML = `<p><a href = ${books[i].url} target='_blank'>${books[i].title}</a> by ${books[i].author}</p>`
 
-                myOl.appendChild(myLi);
+                    // access the ` by holding alt and press 9 and 6
+
+                    myOl.appendChild(myLi);
+                    count++;
+                    console.log(count)
+                }
+                div.appendChild(myOl);
+                document.body.appendChild(div);
+                // Note to self: Don't forget to append the last one to the document itself.
+
             }
-            div.appendChild(myOl);
-            document.body.appendChild(div);
-            // Note to self: Don't forget to append the last one to the document itself.
 
         }
     </script>
