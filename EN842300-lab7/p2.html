@@ -37,19 +37,15 @@
         // wrongAnswer1.className = "wrong-answer";
         // wrongAnswer2.className = "wrong-answer";
         rightAnswer.addEventListener('click', correctAnswer);
-        wrongAnswer1.addEventListener('click', incorrectAnswer1);
-        wrongAnswer2.addEventListener('click', incorrectAnswer2);
+        wrongAnswer1.addEventListener('click', incorrectAnswer);
+        wrongAnswer2.addEventListener('click', incorrectAnswer);
 
         function correctAnswer() {
             rightAnswer.className = "right-answer";
         }
 
-        function incorrectAnswer1() {
-            wrongAnswer1.className = "wrong-answer";
-        }
-
-        function incorrectAnswer2() {
-            wrongAnswer2.className = "wrong-answer";
+        function incorrectAnswer() {
+            this.className = "wrong-answer";
         }
     </script>
 </body>
