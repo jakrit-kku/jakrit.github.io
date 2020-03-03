@@ -1,0 +1,45 @@
+.achv {
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: auto;
+}
+
+.achv h1 {
+    padding-top: 5%;
+}
+
+.achv hr {
+    border: none;
+    height: 5px;
+    background: black;
+}
+
+.achv table {
+    border: none;
+}
+
+.achv td {
+    padding-bottom: 5%;
+}
+
+.h1L {
+    padding-left: 10%;
+}
+
+.h1R {
+    padding-right: 10%;
+}
+
+.pL {
+    padding-left: 10%;
+}
+
+.pR {
+    padding-right: 10%;
+}
+
+iframe {
+    padding-top: 5%;
+    width: 500px;
+    height: 300px;
+}

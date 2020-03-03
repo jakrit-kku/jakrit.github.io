@@ -1,0 +1,38 @@
+.main {
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: auto;
+}
+
+.main h1 {
+    padding-top: 5%;
+}
+
+.main table {
+    border: none;
+}
+
+.main td img {
+    width: 100%;
+    padding-right: 10%;
+    padding-top: 10%;
+}
+
+.main hr {
+    border: none;
+    height: 5px;
+    background: black;
+}
+
+iframe {
+    padding-top: 7%;
+    width: 50%;
+    height: 550px;
+    float: left;
+}
+
+.vidimg {
+    padding-top: 7%;
+    width: 50%;
+    height: 550px;
+}

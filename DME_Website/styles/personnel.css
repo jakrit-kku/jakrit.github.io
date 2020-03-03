@@ -1,0 +1,51 @@
+.pers {
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: auto;
+}
+
+.pers h1 {
+    padding-top: 5%;
+}
+
+.pers hr {
+    border: none;
+    height: 5px;
+    background: black;
+}
+
+.pers table {
+    border: none;
+}
+
+.imgL {
+    width: 50%;
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+.imgR {
+    width: 50%;
+    padding-left: 35%;
+    padding-top: 10%;
+}
+
+.pers td {
+    padding-bottom: 5%;
+}
+
+.h1L {
+    margin-left: -100px;
+}
+
+.h1R {
+    margin-right: -100px;
+}
+
+.pL {
+    margin-left: -100px;
+}
+
+.pR {
+    margin-right: -100px;
+}

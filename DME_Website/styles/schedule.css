@@ -1,0 +1,29 @@
+.schd {
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: auto;
+}
+
+.schd h1 {
+    padding-top: 5%;
+}
+
+.schd table {
+    border: none;
+}
+
+.schd img {
+    padding-top: 5%;
+    margin-left: -120px;
+}
+
+.schd p {
+    padding-left: 35%;
+    /* margin-top: -150px; */
+}
+
+.schd hr {
+    border: none;
+    height: 5px;
+    background: black;
+}

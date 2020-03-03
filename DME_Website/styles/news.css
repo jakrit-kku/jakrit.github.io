@@ -1,0 +1,34 @@
+.news {
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: auto;
+}
+
+.news h1 {
+    padding-top: 5%;
+}
+
+.news table {
+    border: none;
+}
+
+.news td img {
+    width: 100%;
+    padding-right: 10%;
+    padding-top: 10%;
+}
+
+.news p {
+    padding-left: 15%;
+    /* margin-top: -150px; */
+}
+
+.news hr {
+    border: none;
+    height: 5px;
+    background: black;
+}
+
+.title {
+    padding-left: 15%;
+}
