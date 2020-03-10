@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cat Walking</title>
+
+</head>
+
+<body>
+    <img src="cat-walk.gif" id="img" width="300px" style="position:absolute;">
+</body>
+
+
+<script>
+    var img = document.getElementById("img")
+
+    img.style.left = "0px"
+
+
+    var startTime = new Date().getTime();
+
+    var move_it = function() {
+        var curtime = new Date().getTime();
+        var newPosit = (0 + ((curtime - startTime) / 1000) * 30);
+
+
+        img.style.left = newPosit + "px";
+        if (newPosit < 10000) {
+            window.requestAnimationFrame(move_it);
+        }
+    };
+
+    move_it();
+</script>
+
+</html>
