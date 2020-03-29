@@ -54,3 +54,26 @@
 .bold {
     font-weight: bold;
 }
+
+.boxhead a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .homefooter,
+    .logo {
+        padding-top: 10px;
+    }
+    .homefooter ul {
+        float: none;
+        /* padding-left: 10%; */
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    .homefooter h2,
+    .homefooter h3 {
+        float: none;
+        padding-left: 10%;
+    }
+}

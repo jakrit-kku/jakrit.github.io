@@ -1,51 +1,98 @@
-.pers {
+.personbox {
     padding-left: 15%;
     padding-right: 15%;
-    margin: auto;
 }
 
-.pers h1 {
+.personheading {
     padding-top: 5%;
 }
 
-.pers hr {
+.personbox hr {
     border: none;
     height: 5px;
     background: black;
 }
 
-.pers table {
-    border: none;
+.pers {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+    width: 16%;
+    margin-top: 2%;
+    margin-right: 2%;
+    padding: 1%;
+    border-radius: 50px;
+    background-color: #b04343;
+    color: white;
+    text-align: center;
 }
 
-.imgL {
+.prof {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+    width: 100%;
+    margin-top: 2%;
+    margin-right: 2%;
+    padding: 1%;
+    border-radius: 50px;
+    background-color: #873535;
+    color: white;
+    text-align: center;
+}
+
+.pers img {
+    width: 100%;
+}
+
+.prof img {
+    width: 30%;
+    float: left;
+    /* margin-left: 5%; */
+}
+
+.prof p {
     width: 50%;
-    padding-left: 10%;
-    padding-top: 10%;
+    margin-left: 40%;
+    text-align: left;
 }
 
-.imgR {
-    width: 50%;
-    padding-left: 35%;
-    padding-top: 10%;
+
+/* Responsive CSS */
+
+@media only screen and (max-width: 600px) {
+    .pers,
+    .prof {
+        width: 100%;
+        border-radius: 100px;
+        margin-bottom: 5%;
+    }
+    .pers img,
+    .prof img {
+        padding-top: 5%;
+        width: 70%;
+    }
+    .prof img {
+        float: none;
+    }
+    .prof h3,
+    .prof p {
+        margin: auto;
+        width: 80%;
+        text-align: center;
+        font-size: 0.9em;
+    }
 }
 
-.pers td {
-    padding-bottom: 5%;
-}
-
-.h1L {
-    margin-left: -100px;
-}
-
-.h1R {
-    margin-right: -100px;
-}
-
-.pL {
-    margin-left: -100px;
-}
-
-.pR {
-    margin-right: -100px;
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .prof img {
+        width: 40%;
+        padding-top: 10%;
+        margin-right: 20px;
+    }
+    .prof h3,
+    .prof p {
+        padding-top: 2%;
+        margin-left: 20%;
+        width: 80%;
+        text-align: center;
+    }
 }

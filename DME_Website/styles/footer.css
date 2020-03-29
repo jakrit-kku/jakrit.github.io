@@ -59,3 +59,21 @@
     color: #FFFFFF;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 600px) {
+    .footer,
+    .logo {
+        padding-top: 10px;
+    }
+    .footer ul {
+        float: none;
+        /* padding-left: 10%; */
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    .footer h2,
+    .footer h3 {
+        float: none;
+        padding-left: 10%;
+    }
+}

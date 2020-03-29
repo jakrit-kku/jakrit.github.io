@@ -1,7 +1,8 @@
 html,
 body {
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    margin: 0px;
+    overflow-x: hidden;
 }
 
 .headerbox {
@@ -59,6 +60,48 @@ body {
 }
 
 
+/* Responsive Header*/
+
+
+/* Phone */
+
+@media only screen and (max-width: 600px) {
+    .header {
+        text-align: center;
+        margin-top: auto;
+    }
+    .header img {
+        float: none;
+        margin: auto;
+        margin-left: 10%;
+        /* margin-right: 50%; */
+        max-width: 100px;
+    }
+    .header h2 {
+        padding-top: 0px;
+        font-size: 20px;
+        margin-left: 10%;
+        /* text-align: center; */
+    }
+    .header h3 {
+        margin-top: -15px;
+        margin-left: 10%;
+        /* padding-bottom: 2%; */
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+
+/* Tablet */
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .header h3 {
+        text-align: center;
+    }
+}
+
+
 /* Navbar */
 
 .navbar {
@@ -91,6 +134,27 @@ body {
 
 .active {
     background-color: #560000;
+}
+
+
+/* Responsive Navigation Bar */
+
+
+/* Phone */
+
+@media only screen and (max-width: 600px) {
+    .navbar ul {
+        padding-left: 0px;
+    }
+}
+
+
+/* Tablet */
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .navbar ul {
+        padding-left: 100px;
+    }
 }
 
 
