@@ -1,0 +1,55 @@
+.contact {
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: auto;
+}
+
+.contact h1 {
+    padding-top: 5%;
+}
+
+.contact hr {
+    border: none;
+    height: 5px;
+    background: black;
+}
+
+.contacticon {
+    float: left;
+    text-align: center;
+    margin-left: 3%;
+    padding-top: 5%;
+}
+
+.contacticon img {
+    width: 50%;
+}
+
+.contacticon h2 {
+    clear: left;
+}
+
+
+/* Responsive for Phone */
+
+@media only screen and (max-width: 600px) {
+    .contacticon img {
+        width: 30%;
+    }
+}
+
+
+/* Responsive for Ipad */
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .contacticon {
+        padding-left: 25%;
+        text-align: center;
+        float: none;
+        width: 40%;
+    }
+    /* .contacticon img {
+        padding-left: 15%;
+        width: 30%;
+    } */
+}
